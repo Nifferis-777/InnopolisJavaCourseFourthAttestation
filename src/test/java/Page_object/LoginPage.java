@@ -19,7 +19,7 @@ public class LoginPage {
     }
 
     public void login(String username, String password) {
-        step("Ввести логин и пароль от учетной записи пользователя", () -> enterLoginAndPassword(username, password));
+        enterLoginAndPassword(username, password);
         step("Нажать на кнопку входа", this::clickLoginButton);
     }
 
@@ -29,7 +29,7 @@ public class LoginPage {
     }
 
     public void clickLoginButton() {
-        step("Нажать на кнопку входа", () -> $("#login-button").click());
+         $("#login-button").click();
     }
 
 
