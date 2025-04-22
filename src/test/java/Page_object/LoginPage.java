@@ -29,7 +29,7 @@ public class LoginPage {
     }
 
     public void clickLoginButton() {
-         $("#login-button").click();
+        step("Нажать на кнопку входа", () -> $("#login-button").click());
     }
 
 
