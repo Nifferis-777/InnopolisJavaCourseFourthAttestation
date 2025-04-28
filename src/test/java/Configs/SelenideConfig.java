@@ -18,5 +18,6 @@ public class SelenideConfig {
         Configuration.baseUrl = configLoader.getBaseUrl();
         Configuration.pageLoadStrategy = "normal";
         Configuration.timeout = 20000;
+        Configuration.headless = true;
     }
 }
